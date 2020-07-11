@@ -2,7 +2,6 @@ import axios from 'axios'
 
 class AuthService {
   async login(user: any) {
-    console.log(user)
     const response = await axios.post('https://reqres.in/api/login', user)
     localStorage.setItem('token', response.data.token);
     return response.data
