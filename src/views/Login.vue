@@ -13,7 +13,7 @@
 
       <div @click="login" id="btn2">Log-in</div>
 
-    </div> <!-- End Box -->
+    </div>
   </div>
 </template>
 
@@ -92,8 +92,8 @@
   })
   export default class Login extends Vue {
     private user = {
-      email: '',
-      password: '',
+      email: 'eve.holt@reqres.in',
+      password: 'cityslicka',
     }
 
     @Action('login', { namespace }) actionLogin: any
